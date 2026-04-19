@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Authorized Forever Living distributor in Bluff, Durban. Shop pure Aloe Vera Gel, supplements, and skincare locally with Bayanda.">
+    <meta name="keywords" content="Forever Living Durban, Aloe Vera Bluff, Health supplements Durban, Bayanda Forever Living">
+    <title>Forever Living Products | Bayanda - Durban</title>
+    
+    <style>
+        :root {
+            --primary: #2E7D32; 
+            --secondary: #4CAF50;
+            --accent: #FFEB3B; 
+            --dark: #222;
+            --light: #F1F8E9;
+            --white: #fff;
+            --gray: #f4f4f4;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { font-size: 1.2rem; font-weight: bold; color: var(--primary); text-decoration: none; }
+        
+        .btn {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(46, 125, 50, 0.8)), url('https://images.unsplash.com/photo-1596755389378-c11dde12061b?auto=format&fit=crop&w=1200&q=80') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .section { padding: 50px 5%; text-align: center; }
+        .section h2 { color: var(--primary); margin-bottom: 30px; font-size: 2rem; }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+            border: 1px solid #eee;
+        }
+
+        .product-card:hover { transform: translateY(-5px); }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            background: white;
+        }
+
+        .product-card h3 { color: var(--dark); font-size: 1.1rem; margin-bottom: 8px; height: 2.5em; overflow: hidden; }
+        .price { color: var(--primary); font-weight: bold; font-size: 1.3rem; margin-bottom: 15px; }
+
+        .order-small {
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        footer { background: var(--dark); color: white; padding: 30px; text-align: center; font-size: 0.8rem; margin-top: 40px; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .catalog-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">🌿 Forever Durban</a>
+        <a href="#contact" class="btn">Order Now</a>
+    </header>
+
+    <section class="hero">
+        <h1>Health & Wellness in Durban</h1>
+        <p>Premium Aloe Vera products delivered in the Bluff and surrounding areas.</p>
+    </section>
+
+    <section id="catalog" class="section">
+        <h2>Product Catalog</h2>
+        <div class="catalog-grid">
+            
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/022_Aloe_Lips_SA.png" alt="Aloe Lips" class="product-image">
+                <h3>Aloe Lips</h3>
+                <p class="price">R 74,80</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Aloe%20Lips" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/028_Forever_Bright_Toothgel_SA.png" alt="Forever Bright Toothpaste" class="product-image">
+                <h3>Forever Bright Toothpaste</h3>
+                <p class="price">R 165,00</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Forever%20Bright%20Toothpaste" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/061_Aloe_Vera_Gelly_SA.png" alt="Aloe Vera Gelly" class="product-image">
+                <h3>Aloe Vera Gelly</h3>
+                <p class="price">R 320,56</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Aloe%20Vera%20Gelly" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/064_Aloe_Heat_Lotion_SA.png" alt="Aloe Heat Lotion" class="product-image">
+                <h3>Aloe Heat Lotion</h3>
+                <p class="price">R 321,00</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Aloe%20Heat%20Lotion" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/051_Aloe_Propolis_Creme_SA.png" alt="Aloe Propolis Creme" class="product-image">
+                <h3>Aloe Propolis Creme</h3>
+                <p class="price">R 426,22</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Aloe%20Propolis%20Creme" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/617_Aloe_Sunscreen_SA.png" alt="Aloe Sunscreen" class="product-image">
+                <h3>Aloe Sunscreen</h3>
+                <p class="price">R 442,49</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Aloe%20Sunscreen" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/640_Aloe_Jojoba_Shampoo_SA.png" alt="Aloe Jojoba Shampoo" class="product-image">
+                <h3>Aloe Jojoba Shampoo & Conditioner</h3>
+                <p class="price">R 495,11</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Shampoo" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/034_Aloe_Berry_Nectar_SA.png" alt="Aloe Berry Nectar" class="product-image">
+                <h3>Aloe Berry Nectar</h3>
+                <p class="price">R 560,00</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Aloe%20Berry%20Nectar" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/621_Forever_Supergreens_SA.png" alt="Forever Supergreens" class="product-image">
+                <h3>Forever Supergreens</h3>
+                <p class="price">R 820,95</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Forever%20Supergreens" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/289_Forever_Lean_SA.png" alt="Forever Lean" class="product-image">
+                <h3>Forever Lean</h3>
+                <p class="price">R 889,84</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Forever%20Lean" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/473_ARGI_SA.png" alt="Forever Argi+" class="product-image">
+                <h3>Forever Argi+</h3>
+                <p class="price">R 1 612,74</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20Forever%20Argi+" class="order-small">Order on WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://digital-assets.foreverliving.com/product_images/475_C9_Vanilla_SA.png" alt="C9 Detox Pack" class="product-image">
+                <h3>C9 Detox Pack</h3>
+                <p class="price">R 2 602,10</p>
+                <a href="https://wa.me/27718451050?text=Hi%20Bayanda,%20I%20would%20like%20to%20order%20the%20C9%20Pack" class="order-small">Order on WhatsApp</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <h2>Place Your Order</h2>
+            <p><strong>FBO:</strong> Bayanda</p>
+            <p><strong>Location:</strong> 16 Acute Rd, Bluff, Durban</p>
+            <br>
+            <a href="https://wa.me/27718451050?text=Hi%20Bayanda!%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire%20about%20products." class="btn" style="background:#25D366; width:100%;">
+                💬 General WhatsApp Inquiry
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bayanda - Independent Forever Business Owner</p>
+        <p>16 Acute Rd, Bluff, Durban, 4000</p>
+    </footer>
+
+</body>
+</html>
